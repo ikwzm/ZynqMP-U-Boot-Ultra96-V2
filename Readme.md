@@ -3,16 +3,13 @@ Build Boot Loader for Ultra96-V2
 
 ## Files that you can to build
 
-  + boot.bin
-  + boot_outer_shareable.bin
+  + boot.bin                  (Boot Loader for Ultra96-V2)
+  + boot_outer_shareable.bin  (Boot Loader for Ultra96-V2 with outer shareable)
   + zynqmp_fsbl.elf           (FSBL)
   + zynqmp_pmufw.elf          (PMU Firmware)
   + bl31.elf                  (ARM Trusted Firmware Boot Loader state 3-1)
   + u-boot.elf                (U-Boot)
   + design_1_wrapper.bit      (FPGA Bitstream File)
-  + boot.bif                  (BIF for boot.bin)
-  + boot_outer_shareable.bif  (BIF for boot_outer_shareable.bin)
-  + regs.init                 (for boot_outer_shareable.bin)
 
 
 Build Ultra96-V2 Sample FPGA
@@ -271,12 +268,14 @@ Build boot.bin
 
 ### File Description
 
- + zynqmp_fsbl.elf      (Built by "Build FSBL")
- + zynqmp_pmufw.elf     (Built by "Build PMU Firmware")
- + bl31.elf             (Built by "Build ARM Trusted Firmware")  
- + u-boot.elf           (Built by "Build U-Boot")
- + design_1_wrapper.bit (Build by "Build Ultra96-V2 Sample FPGA")
- + boot.bif
+ + zynqmp_fsbl.elf          (Built by "Build FSBL")
+ + zynqmp_pmufw.elf         (Built by "Build PMU Firmware")
+ + bl31.elf                 (Built by "Build ARM Trusted Firmware")  
+ + u-boot.elf               (Built by "Build U-Boot")
+ + design_1_wrapper.bit     (Build by "Build Ultra96-V2 Sample FPGA")
+ + boot.bif                 (Boot Image Format File for boot.bin)
+ + boot_outer_shareable.bif (Boot Image Format File for boot_outer_shareable.bin)
+ + regs.init                (Register Initialize    for boot_outer_shareable.bin)
 
 ### Build boot.bin
 
